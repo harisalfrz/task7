@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/testimonial.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Haris Alfariz</title>
+</head>
+<body>
+    <Header>
+        <nav>
+            <div class="left-side">
+                <ul>
+                    <li><img src="images/logodw.png" alt=""></li>
+                    <li class="hide-item"><a href="index.html">Home</a></li>
+                    <li class="hide-item"><a href="blog.html">Blog</a></li>
+                    <li class="hide-item"><a href="mytestimonial.html">My Testimonial</a></li>
+                </ul>
+            </div>
+            <div class="right-side hide-item">
+                <a href="contact.html">Contact Me</a>
+            </div>
+
+            <!-- Hamburger Menu -->
+            <div class="right-side" id="barsmenu">
+                <button style="background-color: transparent; color: #fd4e2f; cursor: pointer; border: none;" onclick="openHamburger()"><i class="fa-solid fa-bars" style="font-size: 2em; margin-right: 10px;"></i></button>
+            </div>
+        </nav>
+        <div class="hamburger-menu" id="hamburger-menu">
+            <ul>
+                <li><a class="active-page" href="mytestimonial.html">My Testimonial</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </div>
+    </Header>
+    <div class="container">
+        <h1>My Testimonial</h1>
+        <div class="testimonials" id="testimonials">
+        </div>
+    </div>
+    <script src="js/testimonial.js"></script>
+    <script src="js/index.js"></script>
+    </body>
+    </html>

@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&family=REM:wght@200&display=swap');
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+nav {
+    background-color: #e7e7e7ec;
+    display: flex;
+    padding: 18px;
+}
+
+.left-side {
+    width: 50%;
+}
+
+.left-side ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.left-side ul li {
+    margin-right: 50px;
+}
+
+.left-side ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.left-side ul li img {
+  width: 50px;  
+  margin-left: 50px;
+
+}
+
+.right-side {
+  display: flex;
+  width: 48%;
+  justify-content: end;
+  align-items: center;
+}
+
+.right-side :hover {
+  background-color:#fd4e2f;
+}
+
+.right-side a {
+  text-decoration: none;
+  font-size: 18px;
+  background-color: black;
+  padding: 6px 20px;
+  border-radius: 6px;
+  color: white;
+}
+
+#barsmenu {
+    display: none;
+}
+
+Header .hamburger-menu {
+    background-color: #e7e7e7ec;
+    padding: 10px;
+    display: none;
+}
+
+Header .hamburger-menu ul {
+    list-style-type: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+Header .hamburger-menu ul li {
+    padding: 15px;
+}
+
+Header .hamburger-menu ul li a {
+    color: black;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: .2s;
+}
+
+Header .hamburger-menu ul li a:hover {
+    background-color: #fd4e2f;
+    color: white;
+}
+
+Header .hamburger-menu ul li .active-page {
+    background-color: #fd4e2f;
+    color: white;
+}
+
+/* MAIN */
+
+main {
+    background-color: #67a6e6b9;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+
+section .container {
+    width: 1200px;
+    background-color: white;
+    display: flex;
+    margin: auto;
+    border-radius: 20px;
+    padding: 2%;
+}
+
+section .container .content {
+    width: 70%;
+    padding-right: 40px;
+    text-align: justify;
+}
+
+section .container .content .desc .contact {
+    margin: 30px 0;
+}
+
+section .container .content .desc .contact a {
+    margin-right: 10px;
+}
+
+section .container .content .desc .contact a.contact-link {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    transition: .2s;
+}
+
+section .container .content .desc .contact a.contact-link:hover {
+    background-color: #fd4e2f;
+}
+
+section .container .content .desc .contact a.cv-link {
+    text-decoration: none;
+    color: black;
+}
+
+section .container .content .desc .contact a.cv-link:hover {
+    text-decoration: underline;
+    color: #fd4e2f;
+}
+
+section .container .social-media {
+    font-size: 2em;
+    text-align: center;
+}
+
+section .container .social-media a {
+    margin: 10px;
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+
+section .container .social-media a:hover {
+    color: #fd4e2f;
+}
+
+section .card {
+    width: 30%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #d5d5d5;
+}
+
+section .card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+@media screen and (max-width: 500px) {
+    .hide-item {
+        display: none;
+    }
+
+    #barsmenu {
+        display: flex;
+    }
+
+    section {
+        padding: 30px;
+    }
+
+    section .container {
+        width: 100%;
+        margin: 0px;
+        padding: 10px;
+        flex-direction: column;
+        box-shadow: 0px 0px 20px #d5d5d5;
+    }
+
+    section .container .content {
+        width: 92%;
+        padding: 20px;
+    }
+
+    section .container .card {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    section .container {
+        align-items: center;
+    }
+
+    section .container .content {
+        flex: 60%;
+    }
+
+    section .container .card {
+        flex: 40%;
+    }
+}
